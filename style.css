@@ -58,14 +58,23 @@ body{
   top: 0;
   background: rgba(44, 43, 43, 0.5);
   z-index: 1;
+  transition: all 0.3s;
 }
 
 .popup:target{
   opacity: 1;
   visibility: visible;
 }
+
+.popup-area{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
 .popup-body{
-  min-height: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,9 +92,83 @@ body{
   font-size: 2rem;
   background: #fff;
   color: #000;
-  max-width: 80rem;
-  padding: 3rem;
+  height: 80%;
+  width: 70%;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.popup-top{
+  display: flex;
+  align-items: center;
+ 
+  justify-content: space-around;
+  width: 100%;
+  height: 5rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: rgb(233, 228, 228);
+}
+.group-circle{
+  display: flex;
+  gap: 1rem;
+}
+.circle{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50rem;
+}
+.red{
+  background-color: red;
+}
+.orange{
+  background-color: orange;
+}
+.green{
+  background-color: green;
 }
 
 
 
+.popup-middle{
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(190, 185, 185);
+}
+.wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.rectangle-1{
+  height: 2rem;
+  width: 10rem;
+  background: rgb(129, 126, 126);
+}
+.rectangle-2{
+  height: 2rem;
+  width: 3rem;
+  background: rgb(129, 126, 126);
+}
+
+.img{
+  height: 20rem;
+  width: 20rem;
+  background: rgb(129, 126, 126);
+}
+.popup-bottom{
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  justify-content: center;
+  height: calc(60% - 5rem);
+}
+.galary{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
