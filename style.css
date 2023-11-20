@@ -72,6 +72,7 @@ body::after {
   background: rgba(44, 43, 43, 0.5);
   z-index: 1;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 /* .popup:target {
@@ -86,7 +87,9 @@ body::after {
   left: 0;
   top: 0;
 }
-
+.popup-body {
+  cursor: auto;
+}
 /* .popup-body {
   height: 100%;
   display: flex;
